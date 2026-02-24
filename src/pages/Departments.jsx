@@ -2,10 +2,16 @@ import React from 'react';
 import { DEPARTMENTS } from '../data';
 import { motion } from 'framer-motion';
 import { Users, GraduationCap, Building2, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Departments = () => {
     return (
         <div className="pt-32 pb-20 bg-white">
+            <SEO
+                title="Academic Departments - HS Times Excellence"
+                description="Explore the five core engineering disciplines at HS Times. Each department is equipped with state-of-the-art labs and mentored by industry veterans."
+                path="/departments"
+            />
             <div className="container">
                 <header className="text-center mb-24 animate-fade-in">
                     <h1 className="text-5xl md:text-7xl font-bold mb-8">Specialized Departments</h1>

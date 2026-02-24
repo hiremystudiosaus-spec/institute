@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle2, Globe, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const Contact = () => {
     const [submitted, setSubmitted] = useState(false);
@@ -12,6 +13,11 @@ const Contact = () => {
 
     return (
         <div className="pt-32 pb-20 bg-slate-50 min-h-screen">
+            <SEO
+                title="Admissions - Join HS Times Today"
+                description="Ready to embark on your educational journey with HS Times? Apply now for domestic or international courses and shape your global future."
+                path="/contact"
+            />
             <div className="container">
                 <header className="text-center mb-20 animate-fade-in">
                     <h1 className="text-5xl md:text-7xl font-bold mb-6">Join Our Community</h1>

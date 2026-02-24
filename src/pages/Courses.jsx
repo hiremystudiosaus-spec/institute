@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { COURSES } from '../data';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, MapPin, Clock } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Courses = () => {
     const [filter, setFilter] = useState('All');
@@ -12,6 +13,11 @@ const Courses = () => {
 
     return (
         <div className="pt-32 pb-20 bg-slate-50 min-h-screen">
+            <SEO
+                title="Academic Programs - Study with HS Times"
+                description="Explore the domestic and international programs at HS Times. From AI to sustainable energy, our curriculum is designed for the innovators of tomorrow."
+                path="/courses"
+            />
             <div className="container">
                 <header className="text-center mb-20 animate-fade-in">
                     <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Academic Programs</h1>
@@ -27,8 +33,8 @@ const Courses = () => {
                             key={type}
                             onClick={() => setFilter(type)}
                             className={`px-10 py-4 rounded-full font-bold transition-all shadow-sm ${filter === type
-                                    ? 'bg-primary text-white shadow-lg scale-105'
-                                    : 'bg-white text-primary hover:bg-slate-100 hover:shadow-md'
+                                ? 'bg-primary text-white shadow-lg scale-105'
+                                : 'bg-white text-primary hover:bg-slate-100 hover:shadow-md'
                                 }`}
                         >
                             {type} Programs

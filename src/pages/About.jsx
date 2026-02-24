@@ -2,10 +2,16 @@ import React from 'react';
 import { FACULTY } from '../data';
 import { motion } from 'framer-motion';
 import { Award, Zap, Heart, Target, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const About = () => {
     return (
         <div className="pt-20">
+            <SEO
+                title="About Us - The Vision of HS Times"
+                description="Discover the history of HS Times Global Institute. Since 1995, we have been nurturing excellence through innovative research-led education and expert faculty."
+                path="/about"
+            />
             {/* Hero Header */}
             <section className="bg-primary pt-40 pb-28 text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full translate-x-1/3 -translate-y-1/3 blur-3xl"></div>

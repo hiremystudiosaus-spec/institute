@@ -4,10 +4,16 @@ import { motion } from 'framer-motion';
 import { DEPARTMENTS } from '../data';
 import { ArrowRight, BookOpen, UserCheck, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const Home = () => {
     return (
         <main>
+            <SEO
+                title="HS Times - Premier Global Educational Institute"
+                description="Experience world-class education with HS Times. Offering 100+ expert faculty and specialized domestic and international courses for your global future."
+                path="/"
+            />
             <Hero />
 
             {/* Features Section */}
